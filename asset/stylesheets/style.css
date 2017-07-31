@@ -10,7 +10,13 @@ a:hover{
  }
 body{
 	
-	font-family: "helvetica neue",helvetica,arial,sans-serif;
+  background: -moz-linear-gradient(left, rgba(181,226,238,1) 0%, rgba(181,226,238,1) 18%, rgba(85,211,232,1) 47%, rgba(42,204,229,1) 60%, rgba(190,230,239,1) 89%);
+ background: -webkit-gradient(left top, right top, color-stop(0%, rgba(181,226,238,1)), color-stop(18%, rgba(181,226,238,1)), color-stop(47%, rgba(85,211,232,1)), color-stop(60%, rgba(42,204,229,1)), color-stop(89%, rgba(190,230,239,1)));
+ background: -webkit-linear-gradient(left, rgba(181,226,238,1) 0%, rgba(181,226,238,1) 18%, rgba(85,211,232,1) 47%, rgba(42,204,229,1) 60%, rgba(190,230,239,1) 89%);
+ background: -o-linear-gradient(left, rgba(181,226,238,1) 0%, rgba(181,226,238,1) 18%, rgba(85,211,232,1) 47%, rgba(42,204,229,1) 60%, rgba(190,230,239,1) 89%);
+ background: -ms-linear-gradient(left, rgba(181,226,238,1) 0%, rgba(181,226,238,1) 18%, rgba(85,211,232,1) 47%, rgba(42,204,229,1) 60%, rgba(190,230,239,1) 89%);
+
+ font-family: "helvetica neue",helvetica,arial,sans-serif;
 }
 /*
 ==========================
@@ -27,7 +33,7 @@ Navigation
     letter-spacing: 1px;
 }
 .navbar{
-	background: transparent;
+	background: #222;
 	
  }
 .navbar-default .navbar-header .navbar-right {
@@ -86,10 +92,12 @@ Footer
 */
 .footer{
 	text-align: center;
-	background: #1f6b09;
+	background: #222;
+	margin:0 104px;
 }
 .footer small{
 	font-size: 20px;
+	color: #999;
  }
 /*
 ============================
@@ -140,4 +148,33 @@ Container
 .distt p,img{
 	display: inline-block;
 	vertical-align: top;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+}
+.slider {
+	width: 1024px;
+	margin: 2em auto;
+	
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 5s linear;
+	border-radius: 2%;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
 }
