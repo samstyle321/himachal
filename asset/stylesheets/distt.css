@@ -133,3 +133,14 @@ Footer
 	font-size: 20px;
 	color: #999;
  }
+ /*
+ ===========================
+ Contact
+ ===========================
+ */
+ .contact{
+ 	text-align: center;
+ }
+ .contact span{
+ 	color: #f00;
+ }
