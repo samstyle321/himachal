@@ -149,6 +149,9 @@ Container
 	display: inline-block;
 	vertical-align: top;
 }
+br{
+	display: none;
+}
 html,body {
 	margin: 0;
 	padding: 0;
@@ -179,3 +182,21 @@ html,body {
 	opacity: 1;
 }
 
+ @media only screen and (max-width: 700px) {
+    br {
+        display: initial;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .distt p,img{
+    	width: 100%;    	
+    }
+}
+@media only screen and (max-width: 700px) {
+    .jumbotron p{
+    	font-size: 17px;
+    	
+    	
+    	
+    }
+}
